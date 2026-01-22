@@ -20,7 +20,9 @@ const Resume: React.FC = () => {
               Sinhgad Academy of Engineering, Pune
             </h3>
             <p className="text-gray-600 mb-1">2022 — 2026</p>
-            <p className="text-gray-700 font-medium">Bachelor of Engineering</p>
+            <p className="text-gray-700 font-medium">
+              Bachelor of Engineering
+            </p>
           </div>
         </section>
 
@@ -30,49 +32,78 @@ const Resume: React.FC = () => {
             <Code className="w-7 h-7 mr-3 text-blue-600" />
             My Skills
           </h2>
+
           <div className="bg-[#18181c] rounded-2xl shadow-lg p-8 mb-4 border border-[#23232b]">
             {/* Languages */}
-            <div className="mb-5">
-              <span className="block font-semibold text-white text-lg mb-3">Languages</span>
+            <div className="mb-6">
+              <span className="block font-semibold text-white text-lg mb-3">
+                Languages
+              </span>
               <div className="flex flex-wrap gap-3">
                 <span className="skill-tag">Java</span>
                 <span className="skill-tag">Python</span>
-                <span className="skill-tag">C++(Beginner)</span>
               </div>
             </div>
-            {/* Frontend */}
-            <div className="mb-5">
-              <span className="block font-semibold text-white text-lg mb-3">Frontend</span>
-              <div className="flex flex-wrap gap-3">
-                <span className="skill-tag">React.js</span>
-                <span className="skill-tag">HTML</span>
-                <span className="skill-tag">CSS</span>
-                <span className="skill-tag">JavaScript</span>
-              </div>
-            </div>
+
             {/* Backend */}
-            <div className="mb-5">
-              <span className="block font-semibold text-white text-lg mb-3">Backend</span>
+            <div className="mb-6">
+              <span className="block font-semibold text-white text-lg mb-3">
+                Backend
+              </span>
               <div className="flex flex-wrap gap-3">
-                <span className="skill-tag">Spring</span>
-                <span className="skill-tag">PHP</span>
+                <span className="skill-tag">Spring Boot</span>
+                <span className="skill-tag">Hibernate</span>
               </div>
             </div>
-            {/* Database */}
-            <div className="mb-5">
-              <span className="block font-semibold text-white text-lg mb-3">Database</span>
+
+            {/* Frontend */}
+            <div className="mb-6">
+              <span className="block font-semibold text-white text-lg mb-3">
+                Frontend (Basic)
+              </span>
               <div className="flex flex-wrap gap-3">
-                <span className="skill-tag">SQL</span>
-                <span className="skill-tag">MongoDB</span>
-                <span className="skill-tag">PostgreSQL</span>
+                <span className="skill-tag">React</span>
               </div>
             </div>
-            {/* Tools & Technologies */}
+
+            {/* Databases & Search */}
+            <div className="mb-6">
+              <span className="block font-semibold text-white text-lg mb-3">
+                Databases & Search
+              </span>
+              <div className="flex flex-wrap gap-3">
+                <span className="skill-tag">MySQL</span>
+                <span className="skill-tag">Elasticsearch</span>
+              </div>
+            </div>
+
+            {/* Data & Machine Learning */}
+            <div className="mb-6">
+              <span className="block font-semibold text-white text-lg mb-3">
+                Data & Machine Learning
+              </span>
+              <div className="flex flex-wrap gap-3">
+                <span className="skill-tag">Pandas</span>
+                <span className="skill-tag">NumPy</span>
+                <span className="skill-tag">Scikit-learn</span>
+                <span className="skill-tag">TensorFlow</span>
+                <span className="skill-tag">OpenCV</span>
+                <span className="skill-tag">Matplotlib</span>
+              </div>
+            </div>
+
+            {/* Tools & Dev Utilities */}
             <div>
-              <span className="block font-semibold text-white text-lg mb-3">Tools & Technologies</span>
+              <span className="block font-semibold text-white text-lg mb-3">
+                Tools & Dev Utilities
+              </span>
               <div className="flex flex-wrap gap-3">
                 <span className="skill-tag">Git</span>
-                <span className="skill-tag">GitHub</span>
+                <span className="skill-tag">Apache Maven</span>
+                <span className="skill-tag">JWT</span>
+                <span className="skill-tag">Postman</span>
+                <span className="skill-tag">Selenium</span>
+                <span className="skill-tag">Mocha</span>
               </div>
             </div>
           </div>

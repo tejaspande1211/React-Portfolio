@@ -1,16 +1,21 @@
-import React from 'react';
+import React from "react";
+
+export type Section = "about" | "resume" | "projects" | "contact";
 
 interface NavBarProps {
-  activeSection: string;
-  setActiveSection: (section: string) => void;
+  activeSection: Section;
+  setActiveSection: React.Dispatch<React.SetStateAction<Section>>;
 }
 
-const NavBar: React.FC<NavBarProps> = ({ activeSection, setActiveSection }) => {
-  const navItems = [
-    { id: 'About', label: 'About' },
-    { id: 'Resume', label: 'Resume' },
-    { id: 'Projects', label: 'Portfolio' },
-    { id: 'Contact', label: 'Contact' }
+const NavBar: React.FC<NavBarProps> = ({
+  activeSection,
+  setActiveSection
+}) => {
+  const navItems: { id: Section; label: string }[] = [
+    { id: "about", label: "About" },
+    { id: "resume", label: "Resume" },
+    { id: "projects", label: "Portfolio" },
+    { id: "contact", label: "Contact" }
   ];
 
   return (
@@ -19,9 +24,11 @@ const NavBar: React.FC<NavBarProps> = ({ activeSection, setActiveSection }) => {
         {navItems.map((item) => (
           <li key={item.id} className="nav-item">
             <button
-              className={`nav-button ${activeSection === item.id ? 'active' : ''}`}
-              onClick={() => setActiveSection(item.id)}
               type="button"
+              className={`nav-button ${
+                activeSection === item.id ? "active" : ""
+              }`}
+              onClick={() => setActiveSection(item.id)}
             >
               {item.label}
             </button>
